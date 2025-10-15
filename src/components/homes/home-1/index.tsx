@@ -18,6 +18,7 @@ const HomeOne = () => {
       <HeroAreaHomeOne />
       <AboutAreaHomeOne />
       <PortfolioAreaHomeOne />
+
       <ServiceAreaHomeOne />
       <ProcessAreaHomeOne />
       <TestimonialAreaHomeOne />

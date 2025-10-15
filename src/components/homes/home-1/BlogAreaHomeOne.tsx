@@ -52,7 +52,7 @@ const BlogAreaHomeOne = () => {
             <div className="col-lg-6">
               <div className="uxora-blog-wrap">
                 <div className="uxora-blog-thumb">
-                  <img src="assets/images/blog/b2.png" alt="" />
+                  <img src="assets/images/service/blog1.jpg" alt="" />
                 </div>
                 <div className="uxora-blog-meta">
                   <ul>

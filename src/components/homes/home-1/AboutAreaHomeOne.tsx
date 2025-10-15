@@ -18,21 +18,21 @@ const AboutAreaHomeOne = () => {
             <div className="col-xxl-4 col-xl-12 d-flex align-items-center">
               <div className="uxora-counter-wrap">
                 <div className="uxora-counter-item">
-                  <h3 className="uxora-counter-data" aria-label="14">75%</h3>
+                  <h3 className="uxora-counter-data" aria-label="14">Donor Retention</h3>
                   <div className="uxora-counter-line">
                     <img src="assets/images/about/line.png" alt="" />
                   </div>
                   <p>Increase in donor retention rate with our software</p>
                 </div>
                 <div className="uxora-counter-item">
-                  <h3 className="uxora-counter-data" aria-label="6k">24/4</h3>
+                  <h3 className="uxora-counter-data" aria-label="6k">Real-Time Tracking</h3>
                   <div className="uxora-counter-line">
                     <img src="assets/images/about/line.png" alt="" />
                   </div>
                   <p>Real-Time monitoring of blood availability </p>
                 </div>
                 <div className="uxora-counter-item">
-                  <h3 className="uxora-counter-data" aria-label="80k">80%</h3>
+                  <h3 className="uxora-counter-data" aria-label="80k">Faster Processing</h3>
                   <div className="uxora-counter-line">
                     <img src="assets/images/about/line.png" alt="" />
                   </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const HeroAreaHomeOne = () => {
   return (
     <>
-      <div className="uxora-hero-section section" style={{ backgroundImage: 'url(/assets/images/hero/hero-bg1.png)' }}>
+      <div className="uxora-hero-section section" style={{ backgroundImage: 'url(/assets/images/hero/hero-bg20.png)' }}>
         <div className="container">
           <div className="uxora-hero-content" data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});">
             <h2 className="title">Empowering Blood Donation Management with Vital Sync</h2>
@@ -24,7 +24,7 @@ const HeroAreaHomeOne = () => {
       </div>
       <div className="container">
         <div className="uxora-hero-thumb">
-          <img src="assets/images/hero/hero-thumb1.png" alt="" />
+          <img src="assets/images/hero/vitalsync-dashboard.png" alt="" />
         </div>
       </div>
     </>

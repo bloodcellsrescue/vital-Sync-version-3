@@ -7,7 +7,7 @@ const ServiceAreaHomeOne = ({style_2} : any) => {
     <section className="uxora-section-padding bg-light d-flex align-items-center justify-content-center min-vh-100">
       <div className="container">
         <div
-          className="uxora-section-title max-750 text-center mx-auto mb-5"
+          className="uxora-section-title max-750 text-center mx-auto mb-3 "
           data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
         >
           <h2 className="fw-bold mb-3">Discover Our Essential Features</h2>
@@ -16,89 +16,67 @@ const ServiceAreaHomeOne = ({style_2} : any) => {
           </p>
         </div>
 
-        <div className="row justify-content-center g-4">
-
-          {/* Smart Blood Management */}
-          <div className="col-12 col-md-6 col-lg-5">
-            <div className="card h-100 border-0 shadow-sm">
-              <div className="card-body d-flex flex-column text-center">
-                <h5 className="card-title fw-bold mb-3">Smart Blood Management</h5>
-                <p className="card-text flex-grow-1">
-                  Vital Sync automates blood tracking, expiry alerts, and stock updates, helping
-                  banks maintain accuracy and reduce waste.
-                </p>
-                <Link to="/single-service" className="btn btn-outline-danger mt-3 mx-auto">
-                  Learn More
-                </Link>
+        <div className="container py-4 mb-3">
+        <div className="uxora-content01" >
+          <div className="row g-5" >
+            <div className="col-lg-6">
+              <div className="uxora-about-us-thumb">
+                <img className="w-100" src="assets/images/service/s1.jpg" alt="" />
+              </div>
+            </div>
+            <div className="col-lg-6 d-flex align-items-center">
+              <div className="uxora-default-content">
+                <h3 className="fs-1 !important">Donor Recruitment & Management</h3>
+                <p>Vital Sync simplifies the donor experience from sign-up to donation. Automated reminders, personalized messages, and easy digital registration keep donors informed, connected, and motivated to give regularly.</p>
+                <p>The system securely manages donor data and tracks eligibility, ensuring compliance while building a lasting relationship between donors and blood centers. It’s recruitment and retention made effortless.</p>
+                
               </div>
             </div>
           </div>
-
-          {/* Hospital & Bank Network */}
-          <div className="col-12 col-md-6 col-lg-5">
-            <div className="card h-100 border-0 shadow-sm">
-              <div className="card-body d-flex flex-column text-center">
-                <h5 className="card-title fw-bold mb-3">Hospital & Bank Network</h5>
-                <p className="card-text flex-grow-1">
-                  Connect seamlessly with hospitals and blood banks for faster, real-time blood
-                  requests, matching, and delivery.
-                </p>
-                <Link to="/single-service" className="btn btn-outline-danger mt-3 mx-auto">
-                  Learn More
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Donor Engagement */}
-          <div className="col-12 col-md-6 col-lg-5">
-            <div className="card h-100 border-0 shadow-sm">
-              <div className="card-body d-flex flex-column text-center">
-                <h5 className="card-title fw-bold mb-3">Donor Engagement</h5>
-                <p className="card-text flex-grow-1">
-                  Empower donors with reminders, easy booking, and personalized dashboards that make
-                  every donation journey meaningful.
-                </p>
-                <Link to="/single-service" className="btn btn-outline-danger mt-3 mx-auto">
-                  Learn More
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Analytics & Insights */}
-          <div className="col-12 col-md-6 col-lg-5">
-            <div className="card h-100 border-0 shadow-sm">
-              <div className="card-body d-flex flex-column text-center">
-                <h5 className="card-title fw-bold mb-3">Analytics & Insights</h5>
-                <p className="card-text flex-grow-1">
-                  Access real-time analytics and trend insights that help hospitals and
-                  organizations make data-driven decisions.
-                </p>
-                <Link to="/single-service" className="btn btn-outline-danger mt-3 mx-auto">
-                  Learn More
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Secure Platform & Compliance */}
-          <div className="col-12 col-md-6 col-lg-5">
-            <div className="card h-100 border-0 shadow-sm">
-              <div className="card-body d-flex flex-column text-center">
-                <h5 className="card-title fw-bold mb-3">Secure Platform & Compliance</h5>
-                <p className="card-text flex-grow-1">
-                  We ensure full compliance with health data standards while protecting donor and
-                  patient information using end-to-end encryption.
-                </p>
-                <Link to="/single-service" className="btn btn-outline-danger mt-3 mx-auto">
-                  Learn More
-                </Link>
-              </div>
-            </div>
-          </div>
-
         </div>
+      </div>
+
+      <div className="container py-4 my-3">
+        <div className="uxora-content01" >
+          <div className="row g-5" >
+            <div className="col-lg-6 d-flex align-items-center">
+              <div className="uxora-default-content">
+                <h3 className="fs-1 !important">Blood Bank Inventory</h3>
+                <p>Managing blood supply effectively means saving lives faster — and Vital Sync empowers teams to do just that. Our system provides real-time visibility into available blood types, quantities, and expiration dates, ensuring that nothing goes unnoticed or to waste.</p>
+                <p>Automated alerts and seamless coordination between hospitals and blood banks ensure quick response times and efficient blood utilization, especially during critical moments.</p>
+
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="uxora-about-us-thumb w-100">
+                <img  className="w-100" src="assets/images/service/s3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div className="container py-4 mb-3">
+        <div className="uxora-content01" >
+          <div className="row g-5" >
+            <div className="col-lg-6">
+              <div className="uxora-about-us-thumb">
+                <img className="w-100" src="assets/images/service/s2.jpg" alt="" />
+              </div>
+            </div>
+            <div className="col-lg-6 d-flex align-items-center">
+              <div className="uxora-default-content">
+                <h3 className="fs-1 !important">Insights & Analytics</h3>
+                <p>Vital Sync transforms raw data into meaningful insights through real-time dashboards and smart reports. Blood banks and hospitals can easily track trends, monitor inventory, and predict demand. Every metric becomes a tool for smarter, faster decision-making.</p>
+                <p>Our analytics enhance planning, coordination, and resource allocation, ensuring every drop is efficiently managed and every life-saving opportunity is maximized.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
   
