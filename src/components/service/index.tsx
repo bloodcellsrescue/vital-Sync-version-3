@@ -14,7 +14,7 @@ const Service = () => {
     <>
       <HeaderOne />
       <Breadcrumb title="Service" subtitle="Service" />
-      <ServiceAreaHomeOne style_2={true} />
+      <ServiceAreaHomeOne />
       <ProcessAreaHomeOne />
       <TestimonialAreaHomeOne />
       <CtaAreaHomeOne />

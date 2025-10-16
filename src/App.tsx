@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"; 
-import Wrapper from "./layouts/Wrapper";
+
 import HomeOne from "./components/homes/home-1";
 import Aboutus from "./components/about-us";
 import NotFound from "./error";

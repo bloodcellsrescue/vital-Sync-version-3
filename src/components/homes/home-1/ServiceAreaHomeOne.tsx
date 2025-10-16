@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+
  
 
-const ServiceAreaHomeOne = ({style_2} : any) => {
+const ServiceAreaHomeOne = () => {
   return (
     <>
     <section className="uxora-section-padding bg-light d-flex align-items-center justify-content-center min-vh-100">
