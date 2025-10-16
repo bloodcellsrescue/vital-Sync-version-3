@@ -22,7 +22,7 @@ const MobileMenu = ({openMenu, setOpenMenu} : any) => {
           <div className="uxora-menu-mobile-top">
             <div className="mobile-logo">
               <Link to="/">
-                <img src="assets/images/logo/logo-dark.svg" alt="logo" />
+                <img src="assets/images/logo/vitals-logo.svg" alt="logo" />
               </Link>
             </div>
             <button className="uxora-menu-toggle mobile" onClick={() => setOpenMenu(!openMenu)}>

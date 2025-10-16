@@ -17,7 +17,7 @@ const HeaderOne = () => {
             <div className="col-8 col-sm-auto ">
               <div className="header-logo">
                 <Link to="/">
-                  <img src="assets/images/logo/logo-dark.svg" alt="logo" />
+                  <img src="assets/images/logo/vitals-logo.svg" alt="logo" />
                 </Link>
               </div>
             </div>
@@ -44,7 +44,7 @@ const HeaderOne = () => {
               </div>
             </div>
             <div className="col-auto d-flex align-items-center">
-              <a className="uxora-default-btn uxora-header-btn" href="tel:+088">Call Us: (+088) 234-5110</a>
+              <a className="uxora-default-btn uxora-header-btn" href="tel:+088">Call Us: (+234) 903 870 5881</a>
               <div className="uxora-header-menu">
                 <nav className="navbar site-navbar justify-content-between">
                   {/* <!-- Brand Logo--> */}
