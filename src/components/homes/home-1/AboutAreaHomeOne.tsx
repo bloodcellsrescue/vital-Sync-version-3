@@ -9,7 +9,7 @@ const AboutAreaHomeOne = () => {
       <section className="uxora-section-padding position-relative">
         <div className="container" data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});">
           <div className="uxora-section-title max-680">
-            <h2>Driven by passion and innovation</h2>
+            <h2 style={{fontSize: "70px"}}>Driven by care, built for life</h2>
             <div className="uxora-about-shape1">
               <img src="assets/images/about/shape1.svg" alt="" />
             </div>
@@ -42,7 +42,7 @@ const AboutAreaHomeOne = () => {
             </div>
             <div className="col-xxl-4 col-lg-6">
               <div className="uxora-counter-thumb">
-                <img src="assets/images/about/thumb1.png" alt="" />
+                <img src="assets/images/about/thumb8.jpg" alt="" />
               </div>
             </div>
             <div className="col-xxl-4 col-lg-6 d-flex align-items-center">

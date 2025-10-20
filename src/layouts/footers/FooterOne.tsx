@@ -1,45 +1,58 @@
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
  
 
 const FooterOne = () => {
   return (
     <>
-      <footer className="uxora-footer-section section" style={{ backgroundImage: 'url(/assets/images/footer/footer-bg.png)' }}>
+      <footer className="uxora-footer-section section" style={{ backgroundImage: 'url(/assets/images/footer/hero-bg20.png)' }}>
         <div className="container">
           <div className="uxora-footer-one">
-            <div className="row">
+            <div className="row ">
               <div className="col-xxl-4 col-xl-12 col-md-12">
                 <div className="uxora-footer-textarea">
-                  <Link to="/">
-                    <img src="assets/images/logo/logo-dark.svg" alt="" />
-                  </Link>
-                  <p>We work with innovative brands to create digital solutions that engage and inspire. We are your trusted partner for digital transformation in today's world.</p>
+                  <RouterLink to="/">
+                    <img src="assets/images/logo/vitals-logo.svg" alt="" style={{height:"auto", width: "200px"}} />
+                  </RouterLink>
+                  <p>Vital Sync is a digital platform dedicated to transforming blood donation and management through innovation, transparency, and data-driven solutions—connecting donors, hospitals, and communities for a healthier tomorrow.</p>
                 </div>
               </div>
               <div className="col-xxl-3 col-xl-4 col-md-4">
                 <div className="uxora-footer-menu pl-100">
                   <h5>Company</h5>
                   <ul>
-                    <li>
-                      <Link to="/about">About Us</Link>
+                    <li style={{cursor: 'pointer'}}>
+                      <ScrollLink  to="about"
+                        smooth={true}
+                        duration={500}
+                        offset={-70}
+                      >
+                        About
+                        </ScrollLink>
+                    </li>
+                    <li style={{cursor: 'pointer'}}>
+                      <ScrollLink to="features"
+                        smooth={true}
+                        duration={500}
+                        offset={-70}
+                      >
+                        Features
+                        </ScrollLink>
                     </li>
                     <li>
-                      <Link to="/sercice">Our Services</Link>
+                      <RouterLink to="/portfolio">Portfolio</RouterLink>
                     </li>
                     <li>
-                      <Link to="/portfolio">Portfolio</Link>
+                      <RouterLink to="/blog">Blogs</RouterLink>
                     </li>
                     <li>
-                      <Link to="/blog">Blogs</Link>
-                    </li>
-                    <li>
-                      <Link to="/team">Our Team</Link>
+                      <RouterLink to="/contact-us">Contact Us</RouterLink>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="col-xxl-2 col-xl-4 col-md-4">
+              {/* <div className="col-xxl-2 col-xl-4 col-md-4">
                 <div className="uxora-footer-menu pl-40">
                   <h5>Support</h5>
                   <ul>
@@ -60,7 +73,7 @@ const FooterOne = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
               <div className="col-xxl-3 col-xl-4 col-md-4">
                 <div className="uxora-footer-menu2">
                   <h5>Social Links</h5>
@@ -105,7 +118,7 @@ const FooterOne = () => {
             </div>
           </div>
           <div className="uxora-footer-bottom-text">
-            <p>Made with ♥︎ Uxora. All Rights Reserved by Mthemeus</p>
+            <p>Made with ♥︎ Uxora. All Rights Reserved by Vital Sync</p>
           </div>
         </div>
       </footer>

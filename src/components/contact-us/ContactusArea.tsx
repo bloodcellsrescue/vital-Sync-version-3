@@ -7,7 +7,7 @@ const ContactusArea = () => {
       <div className="uxora-section-padding">
         <div className="container">
           <div className="uxora-section-title center">
-            <h2>Reach out and connect with us</h2>
+            <h2 style={{fontSize: "70px"}}>Reach out and connect with us</h2>
           </div>
           <div className="row">
             <div className="col-lg-4 d-flex align-items-center">
@@ -20,8 +20,8 @@ const ContactusArea = () => {
                     <h3>Call us directly</h3>
                     <ul>
                       <li>
-                        <a href="tel:+088">(+088) 234-5110</a>
-                        <a href="tel:+088">(+088) 456-3217</a>
+                        {/* <a href="tel:+088">(+088) 234-5110</a> */}
+                        <a href="tel:+234">(+234)987-05881</a>
                       </li>
                     </ul>
                   </div>
@@ -34,8 +34,8 @@ const ContactusArea = () => {
                     <h3>Email us</h3>
                     <ul>
                       <li>
-                        <a href="tel:+088">example@gmail.com</a>
-                        <a href="tel:+088">mthemeus@gmail.com</a>
+                        {/* <a href="tel:+088">example@gmail.com</a> */}
+                        <a href="email:vitalsync@bloodrescue.org">vitalsync@bloodrescue.org</a>
                       </li>
                     </ul>
                   </div>
@@ -45,9 +45,9 @@ const ContactusArea = () => {
                     <img src="assets/images/contact/call.svg" alt="" />
                   </div>
                   <div className="uxora-contact-info-content">
-                    <h3>Our office address</h3>
+                    <h3 >Our office address</h3>
                     <ul>
-                      <li>4132 Thornridge City, New York.</li>
+                      <li>No. 2c Charles Street, GRA, Enugu</li>
                     </ul>
                   </div>
                 </div>

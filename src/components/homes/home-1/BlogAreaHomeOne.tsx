@@ -6,7 +6,7 @@ const BlogAreaHomeOne = () => {
       <section className="uxora-section-padding3">
         <div className="container">
           <div className="uxora-section-title center max-width-750" data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});">
-            <h2>News and industry trend articles here</h2>
+            <h2 style={{fontSize: "70px"}}>News and industry trend articles here</h2>
           </div>
           <div className="row" data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 400});">
             <div className="col-lg-6">

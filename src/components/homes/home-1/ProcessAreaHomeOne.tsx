@@ -3,7 +3,7 @@ const ProcessAreaHomeOne = () => {
     <section
       className="uxora-section-padding section py-5"
       style={{
-        backgroundImage: 'url(/assets/images/shape/bg1.png)',
+        backgroundImage: 'url(/assets/images/shape/hero-bg20.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
@@ -13,7 +13,7 @@ const ProcessAreaHomeOne = () => {
           className="uxora-section-title center max-width-750 mx-auto mb-5"
           data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, { start: 200 });"
         >
-          <h2 className="fw-bold mb-3">We offer a seamless setup process</h2>
+          <h2 className="fw-bold mb-3" style={{fontSize: "70px"}}>We offer a seamless setup process</h2>
           <p className="text-muted">
             From setup to ongoing support, we make your transition to Vital Sync smooth and effortless.
           </p>

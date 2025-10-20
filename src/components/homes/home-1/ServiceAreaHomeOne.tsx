@@ -9,7 +9,7 @@ const ServiceAreaHomeOne = () => {
             className="uxora-section-title max-750 text-center mx-auto mb-3 "
             data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
           >
-            <h2 className="fw-bold mb-3">Discover Our Essential Features</h2>
+            <h2 className="fw-bold mb-3" style={{fontSize: "70px"}} >Discover Our Essential Features</h2>
             <p className="text-muted">
               Explore the innovative solutions that make Vital Sync the
               heartbeat of modern blood management.
@@ -20,7 +20,7 @@ const ServiceAreaHomeOne = () => {
             <ServiceItem
               title="Donor Recruitment & Management"
               description="Vital Sync simplifies the donor experience from sign-up to donation. Automated reminders, personalized messages, and easy digital registration keep donors informed, connected, and motivated to give regularly. The system securely manages donor data and tracks eligibility, ensuring compliance while building a lasting relationship between donors and blood centers. It’s recruitment and retention made effortless."
-              image="assets/images/service/s1.jpg"
+              image="assets/images/service/s4.jpg"
               link="/register"
             />
             <ServiceItem

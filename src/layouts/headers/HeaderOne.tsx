@@ -2,7 +2,9 @@
 import { useState } from 'react';
 import MobileMenu from './MobileMenu';
 import useSticky from '../../hooks/use-sticky';
-import { Link } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
+import HomeOne from '../../components/homes/home-1';
 
 const HeaderOne = () => { 
   useSticky();
@@ -16,17 +18,37 @@ const HeaderOne = () => {
           <div className="row gx-3 align-items-center justify-content-between">
             <div className="col-8 col-sm-auto ">
               <div className="header-logo">
-                <Link to="/">
-                  <img src="assets/images/logo/vitals-logo.svg" alt="logo" />
-                </Link>
+                <RouterLink to="/">
+                  <img src="assets/images/logo/vitals-logo.svg" alt="logo" style={{height:"auto", width:"200px"}} />
+                </RouterLink>
               </div>
             </div>
             <div className="col">
               <div className="uxora-main-menu-item">
                 <nav className="main-menu menu-style1 d-none d-lg-block menu-left">
                   <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about-us">About Us</Link></li>
+                    <li><RouterLink to="/">Home</RouterLink></li>
+                    <li style={{cursor: 'pointer'}}>
+                      <ScrollLink
+                        to="about"
+                        smooth={true}
+                        duration={500}
+                        offset={-70}
+                      >
+                        About
+                      </ScrollLink>
+                    </li>
+                    <li style={{cursor: 'pointer'}}>
+                      <ScrollLink
+                        to="features"
+                        smooth={true}
+                        duration={500}
+                        offset={-70}
+                      >
+                        Features
+                      </ScrollLink>
+                    </li>
+                    {/* <li><Link to="/about-us">About Us</Link></li>
                     <li className="menu-item-has-children">
                       <a href="#">Pages</a>
                       <ul className="sub-menu">
@@ -37,14 +59,15 @@ const HeaderOne = () => {
                         <li><Link to="/pricing">Pricing</Link></li>
                       </ul>
                     </li>
-                    <li><Link to="/blog">Blog</Link></li>
-                    <li><Link to="/contact-us">Contact</Link></li>
+                    <li><Link to="/blog">Blog</Link></li> */}
+
+                    <li><RouterLink to="/contact-us">Contact</RouterLink></li>
                   </ul>
                 </nav>
               </div>
             </div>
             <div className="col-auto d-flex align-items-center">
-              <a className="uxora-default-btn uxora-header-btn" href="tel:+088">Call Us: (+234) 903 870 5881</a>
+              <a className="uxora-default-btn uxora-header-btn" href="tel:+088">Register</a>
               <div className="uxora-header-menu">
                 <nav className="navbar site-navbar justify-content-between">
                   {/* <!-- Brand Logo--> */}

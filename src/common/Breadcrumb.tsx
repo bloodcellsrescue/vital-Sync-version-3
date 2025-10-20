@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Breadcrumb = ({title, subtitle} : any) => {
   return (
     <>
-      <div className="breadcrumb-wrapper" style={{ backgroundImage: "url(/assets/images/breadcrumbs/b1.png)" }}>
+      <div className="breadcrumb-wrapper" style={{ backgroundImage: "url(/assets/images/breadcrumbs/hero-bg20.png)" }}>
         <div className="container">
           <div className="breadcrumb-content">
             <h1 className="breadcrumb-title">{title}</h1>
