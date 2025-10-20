@@ -4,7 +4,6 @@ import MobileMenu from './MobileMenu';
 import useSticky from '../../hooks/use-sticky';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
-import HomeOne from '../../components/homes/home-1';
 
 const HeaderOne = () => { 
   useSticky();
