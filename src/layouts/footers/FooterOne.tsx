@@ -10,7 +10,7 @@ const FooterOne = () => {
         <div className="container">
           <div className="uxora-footer-one">
             <div className="row ">
-              <div className="col-xxl-4 col-xl-12 col-md-12">
+              <div className="col-xxl-6 col-xl-12 col-md-12 col-12">
                 <div className="uxora-footer-textarea">
                   <RouterLink to="/">
                     <img src="assets/images/logo/vitals-logo.svg" alt="" style={{height:"auto", width: "200px"}} />
@@ -18,7 +18,7 @@ const FooterOne = () => {
                   <p>Vital Sync is a digital platform dedicated to transforming blood donation and management through innovation, transparency, and data-driven solutions—connecting donors, hospitals, and communities for a healthier tomorrow.</p>
                 </div>
               </div>
-              <div className="col-xxl-3 col-xl-4 col-md-4">
+              <div className="col-xxl-3 col-xl-12 col-md-12 col-12">
                 <div className="uxora-footer-menu pl-100">
                   <h5>Company</h5>
                   <ul>
@@ -74,7 +74,7 @@ const FooterOne = () => {
                   </ul>
                 </div>
               </div> */}
-              <div className="col-xxl-3 col-xl-4 col-md-4">
+              <div className="col-xxl-3 col-xl-12 col-md-12 col-12">
                 <div className="uxora-footer-menu2">
                   <h5>Social Links</h5>
                   <div className="uxora-social-wrap">
@@ -118,7 +118,7 @@ const FooterOne = () => {
             </div>
           </div>
           <div className="uxora-footer-bottom-text">
-            <p>Made with ♥︎ Uxora. All Rights Reserved by Vital Sync</p>
+            <p>Made By ♥︎ Granscale. All Rights Reserved by Vital Sync</p>
           </div>
         </div>
       </footer>

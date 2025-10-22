@@ -1,9 +1,9 @@
  
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 const MobileMenu = ({openMenu, setOpenMenu} : any) => {
-  const [openSubMenu, setOpenSubMenu] = useState(false); 
 
   const handleWrapperClick = () => {
     setOpenMenu(false);
@@ -21,9 +21,9 @@ const MobileMenu = ({openMenu, setOpenMenu} : any) => {
         <div className="uxora-menu-area text-center" onClick={stopPropagation}>
           <div className="uxora-menu-mobile-top">
             <div className="mobile-logo">
-              <Link to="/">
+              <RouterLink to="/">
                 <img src="assets/images/logo/vitals-logo.svg" alt="logo" />
-              </Link>
+              </RouterLink>
             </div>
             <button className="uxora-menu-toggle mobile" onClick={() => setOpenMenu(!openMenu)}>
               <i className="ri-close-line"></i>
@@ -32,9 +32,10 @@ const MobileMenu = ({openMenu, setOpenMenu} : any) => {
         
           <div className="uxora-mobile-menu">          
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about-us">About Us</Link></li>
-              <li className={`menu-item-has-children uxora-item-has-children ${openSubMenu ? 'uxora-active' : ''}`}>
+              <li><RouterLink to="/">Home</RouterLink></li>
+              <li><ScrollLink to="about" smooth={true} duration={500} offset={-70}>About</ScrollLink></li>
+              <li><ScrollLink to ="features" smooth= {true} duration={500} offset={-70}>Features</ScrollLink></li>
+              {/* <li className={`menu-item-has-children uxora-item-has-children ${openSubMenu ? 'uxora-active' : ''}`}>
                 <a style={{cursor: "pointer"}} onClick={() => setOpenSubMenu(!openSubMenu)}>Pages
                 <span className="uxora-mean-expand"></span>
                 </a>
@@ -46,13 +47,13 @@ const MobileMenu = ({openMenu, setOpenMenu} : any) => {
                   <li><Link to="/pricing">Pricing</Link></li>
                 </ul>
               </li>
-              <li><Link to="/blog">Blog</Link></li>
-              <li><Link to="/contact-us">Contact</Link></li>
+              <li><Link to="/blog">Blog</Link></li> */}
+              <li><RouterLink to="/contact-us">Contact</RouterLink></li>
             </ul>
           </div>
           <div className="uxora-mobile-menu-btn">
-            <Link className="uxora-default-btn sm-size" to="/contact-us">Get in Touch</Link>
-            <Link className="uxora-default-btn sm-size" to="/contact-us">Contact Us</Link>
+            <RouterLink className="uxora-default-btn sm-size" to="/contact-us">Get in Touch</RouterLink>
+            <RouterLink className="uxora-default-btn sm-size" to="/contact-us">Contact Us</RouterLink>
           </div>
         </div>
       </div>
