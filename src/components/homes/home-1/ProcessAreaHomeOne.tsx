@@ -5,7 +5,7 @@ const ProcessAreaHomeOne = () => {
 		<section className="uxora-section-padding section tw:pt-20! tw:pb-36!" >
 			<div className="container text-center">
 				<div className="uxora-section-title center tw:max-w-5xl!  mx-auto" data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, { start: 200 });" >
-					<h2 className="tw:font-semibold! tw:text-6xl! mb-3" >Ensure Safe Blood Availability <br /> Anywhere, Anytime</h2>
+					<h2 className="tw:font-semibold! tw:text-3xl!  tw:md:text-6xl! mb-3" >Ensure Safe Blood Availability <br /> Anywhere, Anytime</h2>
 					<p className="text-muted">From seamless setup to continuous support, we make your transition effortless — so you can focus on what truly matters: saving lives.</p>
 				</div>
 

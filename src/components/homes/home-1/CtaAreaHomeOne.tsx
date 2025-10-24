@@ -12,7 +12,7 @@ const CtaAreaHomeOne = () => {
           <img src="assets/images/cta/shape3.svg" alt="" />
         </div>
         <div className="uxora-cta-title">
-          <h2 className="tw:text-6xl! tw:leading-20">Start Saving Lives Smarter <br /> Get Vital Sync Today.</h2>
+          <h2 className="tw:text-3xl! tw:md:text-6xl! tw:leading-20">Start Saving Lives Smarter <br /> Get Vital Sync Today.</h2>
           <div className="uxora-cta-btn">
             <a className="uxora-default-btn outline-btn2" href={ENV.APP_REGISTER}>Get Started</a>
           </div>

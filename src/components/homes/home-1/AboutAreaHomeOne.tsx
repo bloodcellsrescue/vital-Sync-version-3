@@ -11,7 +11,7 @@ const AboutAreaHomeOne = () => {
       <section id="about" className="uxora-section-padding position-relative">
         <div className="container" data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});">
           <div className="uxora-section-title">
-            <h2 className="tw:text-7xl! tw:font-semibold!">Driven by care, built for saving lives</h2>
+            <h2 className="tw:text-3xl! tw:md:text-7xl! tw:font-semibold!">Driven by care, built for saving lives</h2>
             <div className="uxora-about-shape1">
               <img src="assets/images/about/shape1.svg" alt="" />
             </div>

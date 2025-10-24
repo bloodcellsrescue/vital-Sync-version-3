@@ -2,8 +2,9 @@
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
+import { ENV } from '../../data/env';
 
-const MobileMenu = ({openMenu, setOpenMenu} : any) => {
+const MobileMenu = ({openMenu, setOpenMenu} : {openMenu: boolean, setOpenMenu: React.Dispatch<React.SetStateAction<boolean>>}) => {
 
   const handleWrapperClick = () => {
     setOpenMenu(false);
@@ -35,25 +36,11 @@ const MobileMenu = ({openMenu, setOpenMenu} : any) => {
               <li><RouterLink to="/">Home</RouterLink></li>
               <li><ScrollLink to="about" smooth={true} duration={500} offset={-70}>About</ScrollLink></li>
               <li><ScrollLink to ="features" smooth= {true} duration={500} offset={-70}>Features</ScrollLink></li>
-              {/* <li className={`menu-item-has-children uxora-item-has-children ${openSubMenu ? 'uxora-active' : ''}`}>
-                <a style={{cursor: "pointer"}} onClick={() => setOpenSubMenu(!openSubMenu)}>Pages
-                <span className="uxora-mean-expand"></span>
-                </a>
-                <ul className={`sub-menu uxora-submenu ${openSubMenu ? 'uxora-open' : ''}`} style={{display: openSubMenu ? 'block' : 'none'}}>
-                  <li><Link to="/service">Service</Link></li>
-                  <li><Link to="/portfolio">Portfolio</Link></li>
-                  <li><Link to="/team">Team</Link></li>
-                  <li><Link to="/faq">Faq</Link></li>
-                  <li><Link to="/pricing">Pricing</Link></li>
-                </ul>
-              </li>
-              <li><Link to="/blog">Blog</Link></li> */}
-              <li><RouterLink to="/contact-us">Contact</RouterLink></li>
             </ul>
           </div>
           <div className="uxora-mobile-menu-btn">
-            <RouterLink className="uxora-default-btn sm-size" to="/contact-us">Get in Touch</RouterLink>
-            <RouterLink className="uxora-default-btn sm-size" to="/contact-us">Contact Us</RouterLink>
+            <a className="uxora-default-btn sm-size" href={ENV.APP_REGISTER}>Get Started</a>
+            <a className="uxora-default-btn sm-size" href={ENV.APP_LOGIN}>Login</a>
           </div>
         </div>
       </div>

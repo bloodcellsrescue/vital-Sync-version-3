@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import MobileMenu from './MobileMenu';
 import useSticky from '../../hooks/use-sticky';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link, Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import { ENV } from '../../data/env';
 
@@ -28,14 +28,15 @@ const HeaderOne = () => {
                 <nav className="main-menu menu-style1 d-none d-lg-block menu-left">
                   <ul>
                     <li style={{cursor: 'pointer'}}>
+                      <Link to="/" >Home</Link>
+                    </li>
+                    <li style={{cursor: 'pointer'}}>
                       <ScrollLink to="about" smooth={true} duration={500} offset={-70} >About</ScrollLink>
                     </li>
 
                     <li style={{cursor: 'pointer'}}>
                       <ScrollLink to="features" smooth={true} duration={500} offset={-70} >Features</ScrollLink>
                     </li>
-
-                    <li><RouterLink to="/contact-us">Contact</RouterLink></li>
                   </ul>
                 </nav>
               </div>
