@@ -1,7 +1,30 @@
 @import "bootstrap/dist/css/bootstrap.css";
- 
- 
-
 @import "../../public/assets/css/main.css";
 @import "../../public/assets/css/remixicon.css";
 @import "../../public/assets/css/app.css";
+ 
+@import "tailwindcss" prefix(tw);
+
+* {
+    font-family: "Inter", "sans-serif";
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Inter", "sans-serif";
+
+}
+
+@layer base {
+    * {
+        font-family: "Inter", "sans-serif";
+    }
+
+    body{
+        @apply tw:bg-white!;
+    }
+    
+    .uxora-header-section.sticky-menu {
+        @apply tw:bg-white!;
+    }
+    
+}

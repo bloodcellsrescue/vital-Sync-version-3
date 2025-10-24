@@ -1,118 +1,33 @@
+import ProcessItem from "./partials/process-item";
+
 const ProcessAreaHomeOne = () => {
-  return (
-    <section
-      className="uxora-section-padding section py-5"
-      style={{
-        backgroundImage: 'url(/assets/images/shape/hero-bg20.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      <div className="container text-center">
-        <div
-          className="uxora-section-title center max-width-750 mx-auto mb-5"
-          data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, { start: 200 });"
-        >
-          <h2 className="fw-bold mb-3" style={{fontSize: "70px"}}>We offer a seamless setup process</h2>
-          <p className="text-muted">
-            From setup to ongoing support, we make your transition to Vital Sync smooth and effortless.
-          </p>
-        </div>
+	return (
+		<section className="uxora-section-padding section tw:pt-20! tw:pb-36!" >
+			<div className="container text-center">
+				<div className="uxora-section-title center tw:max-w-5xl!  mx-auto" data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, { start: 200 });" >
+					<h2 className="tw:font-semibold! tw:text-6xl! mb-3" >Ensure Safe Blood Availability <br /> Anywhere, Anytime</h2>
+					<p className="text-muted">From seamless setup to continuous support, we make your transition effortless — so you can focus on what truly matters: saving lives.</p>
+				</div>
 
-        <div
-          className="row justify-content-center g-4"
-          data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, { start: 400 });"
-        >
-          {/* Streamlined Setup */}
-          <div className="col-12 col-md-6 col-lg-4">
-            <div className="card h-100 border-0 shadow-sm p-4">
-              <div className="card-body d-flex flex-column align-items-center text-center">
-                {/* <div className="uxora-process-number">
-                  <h3>1</h3>
-                </div>
-                <div className="uxora-process-shape">
-                  <img src="assets/images/shape/shape3.svg" alt="" />
-                </div> */}
-                <h3
-                  className="card-title fw-semibold text-dark mb-3"
-                  style={{
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: 'vertical',
-                    display: '-webkit-box',
-                    overflow: 'hidden',
-                  }}
-                >
-                  Streamlined Setup
-                </h3>
-                <p className="card-text text-muted flex-grow-1">
-                  Get started with Vital Sync in no time — our guided onboarding makes setup fast, intuitive, and
-                  stress-free, so your team can focus on saving lives, not managing software.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Tailored Training */}
-          <div className="col-12 col-md-6 col-lg-4">
-            <div className="card h-100 border-0 shadow-sm p-4">
-              <div className="card-body d-flex flex-column align-items-center text-center">
-                {/* <div className="uxora-process-number">
-                  <h3>2</h3>
-                </div>
-                <div className="uxora-process-shape">
-                  <img src="assets/images/shape/shape2.svg" alt="" />
-                </div> */}
-                <h3
-                  className="card-title fw-semibold text-dark mb-3"
-                  style={{
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: 'vertical',
-                    display: '-webkit-box',
-                    overflow: 'hidden',
-                  }}
-                >
-                  Tailored Training
-                </h3>
-                <p className="card-text text-muted flex-grow-1">
-                  We provide hands-on training built around your workflow, ensuring every staff member understands how to
-                  use Vital Sync effectively from day one.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Ongoing Support */}
-          <div className="col-12 col-md-6 col-lg-4">
-            <div className="card h-100 border-0 shadow-sm p-4">
-              <div className="card-body d-flex flex-column align-items-center text-center">
-                {/* <div className="uxora-process-number">
-                  <h3>3</h3>
-                </div>
-                <div className="uxora-process-shape">
-                  <img src="assets/images/shape/shape1.svg" alt="" />
-                </div> */}
-                <h3
-                  className="card-title fw-semibold text-dark mb-3"
-                  style={{
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: 'vertical',
-                    display: '-webkit-box',
-                    overflow: 'hidden',
-                  }}
-                >
-                  Ongoing Support
-                </h3>
-                <p className="card-text text-muted flex-grow-1">
-                  Our dedicated support team stays with you beyond launch — offering 24/7 assistance, updates, and
-                  troubleshooting to keep your system running smoothly.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+				<div className="tw:grid tw:md:grid-cols-3 tw:gap-5" >
+					<ProcessItem 
+						title="Seamless Onboarding"
+						description="Get up and running quickly with our guided onboarding process. Vital Sync’s intuitive setup ensures your team can start monitoring, tracking, and managing blood safety in minutes — not weeks."
+					/>
+					
+					<ProcessItem 
+						title="Turn Data into Action"
+						description="Unlock the power of analytics. Vital Sync transforms raw data into meaningful insights — helping you track performance, predict shortages, and improve blood safety outcomes across your network."
+					/>
+					
+					<ProcessItem 
+						title="Continuous Support"
+						description="We’re with you every step of the way. Our expert support team provides 24/7 assistance, system updates, and proactive monitoring to keep your operations smooth, reliable, and connected."
+					/>
+				</div>
+			</div>
+		</section>
+	);
 };
 
 export default ProcessAreaHomeOne;

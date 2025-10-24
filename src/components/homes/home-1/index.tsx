@@ -1,11 +1,8 @@
  import { Element } from "react-scroll";
 import HeroAreaHomeOne from "./HeroAreaHomeOne";
 import AboutAreaHomeOne from "./AboutAreaHomeOne";
-import PortfolioAreaHomeOne from "./PortfolioAreaHomeOne";
 import ServiceAreaHomeOne from "./ServiceAreaHomeOne";
 import ProcessAreaHomeOne from "./ProcessAreaHomeOne";
-// import TestimonialAreaHomeOne from "./TestimonialAreaHomeOne";
-import BlogAreaHomeOne from "./BlogAreaHomeOne";
 import CtaAreaHomeOne from "./CtaAreaHomeOne"; 
 import HeaderOne from "../../../layouts/headers/HeaderOne";
 import FooterOne from "../../../layouts/footers/FooterOne";
@@ -18,10 +15,10 @@ const HomeOne = () => {
       <HeroAreaHomeOne />
       
       <Element name="about">
-      <AboutAreaHomeOne />
+        <AboutAreaHomeOne />
       </Element>
 
-      <PortfolioAreaHomeOne />
+      {/* <PortfolioAreaHomeOne /> */}
        <Element name="features">
         <ServiceAreaHomeOne />
       </Element>
@@ -29,7 +26,7 @@ const HomeOne = () => {
       
       <ProcessAreaHomeOne />
       {/* <TestimonialAreaHomeOne /> */}
-      <BlogAreaHomeOne />
+      {/* <BlogAreaHomeOne /> */}
       <CtaAreaHomeOne />
       <FooterOne />
       <BackToTop />

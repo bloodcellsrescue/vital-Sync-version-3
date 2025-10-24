@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { ENV } from "../../../data/env";
 
  
 const CtaAreaHomeOne = () => {
@@ -11,11 +11,10 @@ const CtaAreaHomeOne = () => {
         <div className="uxora-cta-shape1">
           <img src="assets/images/cta/shape3.svg" alt="" />
         </div>
-        <div className="uxora-cta-title" data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 600});">
-          <h2 style={{fontSize: "70px"}}>Start Saving Lives Smarter — Get Vital Sync Today.</h2>
+        <div className="uxora-cta-title">
+          <h2 className="tw:text-6xl! tw:leading-20">Start Saving Lives Smarter <br /> Get Vital Sync Today.</h2>
           <div className="uxora-cta-btn">
-            <Link className="uxora-default-btn outline-btn2" to="/contact-us">Get Started</Link>
-            <Link className="uxora-default-btn outline-btn2" to="/contact-us">Contact Us</Link>
+            <a className="uxora-default-btn outline-btn2" href={ENV.APP_REGISTER}>Get Started</a>
           </div>
           <div className="uxora-cta-shape3">
             <img src="assets/images/cta/shape1.png" alt="" />

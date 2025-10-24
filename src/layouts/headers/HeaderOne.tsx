@@ -4,6 +4,7 @@ import MobileMenu from './MobileMenu';
 import useSticky from '../../hooks/use-sticky';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
+import { ENV } from '../../data/env';
 
 const HeaderOne = () => { 
   useSticky();
@@ -26,55 +27,27 @@ const HeaderOne = () => {
               <div className="uxora-main-menu-item">
                 <nav className="main-menu menu-style1 d-none d-lg-block menu-left">
                   <ul>
-                    <li><RouterLink to="/">Home</RouterLink></li>
                     <li style={{cursor: 'pointer'}}>
-                      <ScrollLink
-                        to="about"
-                        smooth={true}
-                        duration={500}
-                        offset={-70}
-                      >
-                        About
-                      </ScrollLink>
+                      <ScrollLink to="about" smooth={true} duration={500} offset={-70} >About</ScrollLink>
                     </li>
+
                     <li style={{cursor: 'pointer'}}>
-                      <ScrollLink
-                        to="features"
-                        smooth={true}
-                        duration={500}
-                        offset={-70}
-                      >
-                        Features
-                      </ScrollLink>
+                      <ScrollLink to="features" smooth={true} duration={500} offset={-70} >Features</ScrollLink>
                     </li>
-                    {/* <li><Link to="/about-us">About Us</Link></li>
-                    <li className="menu-item-has-children">
-                      <a href="#">Pages</a>
-                      <ul className="sub-menu">
-                        <li><Link to="/service">Service</Link></li>
-                        <li><Link to="/portfolio">Portfolio</Link></li>
-                        <li><Link to="/team">Team</Link></li>
-                        <li><Link to="/faq">Faq</Link></li>
-                        <li><Link to="/pricing">Pricing</Link></li>
-                      </ul>
-                    </li>
-                    <li><Link to="/blog">Blog</Link></li> */}
 
                     <li><RouterLink to="/contact-us">Contact</RouterLink></li>
                   </ul>
                 </nav>
               </div>
             </div>
-            <div className="col-auto d-flex align-items-center">
-              <a className="uxora-default-btn uxora-header-btn" href="tel:+088">Register</a>
+            <div className="col-auto d-flex align-items-center g-3">
+              <a className="uxora-default-btn uxora-header-btn" href={ENV.APP_REGISTER}>Register</a>
+              <a className="uxora-default-btn tw:bg-gray-100! tw:hidden! tw:md:inline-block! tw:ml-2! tw:border-0! outline-btn" href={ENV.APP_LOGIN}>Login</a>
               <div className="uxora-header-menu">
                 <nav className="navbar site-navbar justify-content-between">
-                  {/* <!-- Brand Logo--> */}
-                  {/* <!-- mobile menu trigger --> */}
                   <button className="uxora-menu-toggle d-inline-block d-lg-none" onClick={() => setOpenMenu(!openMenu)}>
                     <span></span>
                   </button>
-                  {/* <!--/.Mobile Menu Hamburger Ends--> */}
                 </nav>
               </div>
             </div>

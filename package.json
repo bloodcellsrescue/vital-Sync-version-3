@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.16",
     "@tsparticles/react": "^3.0.0",
     "@types/bootstrap": "^5.2.10",
     "bootstrap": "^5.3.3",
@@ -22,6 +23,7 @@
     "react-slick": "^0.30.3",
     "react-use": "^17.6.0",
     "slick-carousel": "^1.8.1",
+    "tailwindcss": "^4.1.16",
     "tsparticles": "^3.8.1"
   },
   "devDependencies": {

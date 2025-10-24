@@ -15,6 +15,7 @@
 
 // vite.config.js
 import postcssImport from 'postcss-import';
+import tailwindcss from '@tailwindcss/vite'
 
 interface AtRule {
   name: string;
@@ -22,6 +23,7 @@ interface AtRule {
 }
 
 export default {
+  plugins: [tailwindcss()],
   css: {
     postcss: {
       plugins: [
